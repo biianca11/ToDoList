@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP TO DO LIST</title>  
+    <!-- Conexión con Google Fonts para importar una fuente personalizada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Iconos de FontAwesome para añadir estilos a botones e íconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Archivo de estilos CSS -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    
+<div class="container">
+     <!-- Sección del perfil que incluye fecha y título de la aplicación -->
+    <div class="perfil">
+        <div id="fecha"></div> <!-- Contenedor para mostrar la fecha actual -->
+        <h1>Lista Tareas</h1>
+        <span>Bianca Mihaela Ionel</span><!-- Nombre del usuario -->
+    </div>
+    <!-- Formulario para agregar tareas -->
+    <div class="agregar-tarea">
+        <input type="text" id="input" placeholder="Agregar una tarea: "><!-- Campo de entrada para nueva tarea -->
+        <i id="boton-enter"class="fas fa-plus-circle"></i><!-- Botón para añadir la tarea -->
+    </div>
+
+    <!-- Sección donde se listarán las tareas -->
+    <div class="seccion-tarea">
+        <h3>Tareas Pendientes: </h3>
+        <ul id="lista"></ul><!-- Lista dinámica para mostrar las tareas -->
+    </div>   
+</div>
+<script src="Main.js"></script><!-- Archivo de JavaScript que contiene la lógica de la app -->
+</body>
+</html>
